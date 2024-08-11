@@ -41,6 +41,16 @@
         background-color: aqua;
         cursor: pointer;
       }
+      label{
+        display: flex;
+        gap:20px;
+        cursor: pointer;
+        align-items: center;
+        margin-bottom: 10px;
+        img{
+            height: 30px;
+        }
+      }
     }
     p {
       color: blueviolet;
