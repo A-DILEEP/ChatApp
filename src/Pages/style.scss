@@ -1,45 +1,49 @@
-.formContainer{
-    background-color: aqua;
-    height: 100vh;
+.formContainer {
+  background-image:url('https://wallpaperaccess.com/full/340434.png');
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .formWrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px;
+    background-color: rgb(102, 159, 230);
     align-items: center;
-    .formWrapper{
-        display: flex;
-        flex-direction: column;
-        padding:10px;
-        border-radius: 10px;
-        gap:15px;
-        background-color: azure;
-        align-items: center;
-        .title{
-            color:blueviolet;
-            font-size: 20px;
-        }
-        form{
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap:10px;
-            input{
-                padding: 10px;
-                border-radius: 5px;
-                border:none;
-                width:300px;
-                border-bottom: 1px solid #000;
-            }::placeholder{
-                color:rgb(167, 165, 165)
-            }
-            button{
-                width: 100px;
-                height: 30px;
-                border-radius: 10px;
-                border:none;
-                background-color: aqua;
-                cursor: pointer;
-            }
-        }
+    .title {
+      color: blueviolet;
+      font-size: 20px;
     }
+    form {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      input {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        width: 300px;
+        border-bottom: 1px solid #000;
+      }
+      ::placeholder {
+        color: rgb(167, 165, 165);
+      }
+      button {
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        background-color: aqua;
+        cursor: pointer;
+      }
+    }
+    p {
+      color: blueviolet;
+    }
+  }
 }

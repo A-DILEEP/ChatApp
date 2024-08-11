@@ -12,7 +12,6 @@ const Register = () => {
                 <input type="file" />
                 <button>SignUp</button>
             </form>
-
             <p>You dont have an account ? Login</p>
         </div>
     </div>
