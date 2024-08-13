@@ -11,7 +11,7 @@
     padding: 10px;
     border-radius: 10px;
     gap: 15px;
-    background-color: rgb(102, 159, 230);
+    background-color: #669fe6;
     align-items: center;
     .title {
       color: blueviolet;
@@ -54,6 +54,64 @@
     }
     p {
       color: blueviolet;
+    }
+  }
+}
+
+
+.home{
+  background-color:#669fe6;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container{
+    width: 75%;
+    height: 80%;
+    border: 1px solid #000;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    .sidebar{
+      flex:1;
+      background-color: blueviolet;
+      .navbar{
+        display: flex;
+        align-items: center;
+        background-color:#38ec56;
+        height: 50px;
+        padding: 10px;
+        justify-content: space-between;
+        color:#fff;
+        .logo{
+          font-weight: bold;
+          font-size: 20px;
+        }
+        .user{
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        img{
+          background-color: #fff;
+          height: 24px;
+          width: 24px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+        button{
+          background-color: #fff;
+          border-radius: 5px;
+          border: none;
+          width: 60px;
+          height: 20px;
+          font-size: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+    .chat{
+      flex:2;
     }
   }
 }
