@@ -108,6 +108,40 @@
           font-size: 10px;
           cursor: pointer;
         }
+
+      }
+      .search{
+        border-bottom:1px solid #b4c7bd;
+        .searchForm{
+          padding: 10px;
+          input{
+            height: 30px;
+            width: 100%;
+            border-radius: 5px;
+            border:none;
+            background-color:#a1e9aa;
+            color:#fff;
+            outline: none;
+            &::placeholder{
+              color: #fff;
+            }
+          }
+        }
+        .userChat{
+          padding: 10px;
+          align-items: center;
+          cursor: pointer;
+          gap: 10px;
+          color:#fff;
+          &:hover{
+            background-color: #aee666;
+          }
+          img{
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
       }
     }
     .chat{
