@@ -1,5 +1,5 @@
 .formContainer {
-  background-image:url('https://wallpaperaccess.com/full/340434.png');
+  background-image: url("https://wallpaperaccess.com/full/340434.png");
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -41,14 +41,14 @@
         background-color: aqua;
         cursor: pointer;
       }
-      label{
+      label {
         display: flex;
-        gap:20px;
+        gap: 20px;
         cursor: pointer;
         align-items: center;
         margin-bottom: 10px;
-        img{
-            height: 30px;
+        img {
+          height: 30px;
         }
       }
     }
@@ -58,48 +58,47 @@
   }
 }
 
-
-.home{
-  background-color:#669fe6;
+.home {
+  background-color: #669fe6;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  .container{
+  .container {
     width: 75%;
     height: 80%;
     border: 1px solid #000;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
-    .sidebar{
-      flex:1;
+    .sidebar {
+      flex: 1;
       background-color: blueviolet;
-      .navbar{
+      .navbar {
         display: flex;
         align-items: center;
-        background-color:#38ec56;
+        background-color: #38ec56;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
-        color:#fff;
-        .logo{
+        color: #fff;
+        .logo {
           font-weight: bold;
           font-size: 20px;
         }
-        .user{
+        .user {
           display: flex;
           gap: 10px;
           align-items: center;
         }
-        img{
+        img {
           background-color: #fff;
           height: 24px;
           width: 24px;
           border-radius: 50%;
           object-fit: cover;
         }
-        button{
+        button {
           background-color: #fff;
           border-radius: 5px;
           border: none;
@@ -108,44 +107,45 @@
           font-size: 10px;
           cursor: pointer;
         }
-
       }
-      .search{
-        border-bottom:1px solid #b4c7bd;
-        .searchForm{
+      .search {
+        border-bottom: 1px solid #b4c7bd;
+        .searchForm {
           padding: 10px;
-          input{
+          input {
             height: 30px;
             width: 100%;
             border-radius: 5px;
-            border:none;
-            background-color:#a1e9aa;
-            color:#fff;
+            border: none;
+            background-color: blueviolet;
+            border-bottom: 1px solid #fff;
+            color: #fff;
             outline: none;
-            &::placeholder{
-              color: #fff;
+            &::placeholder {
+              color: #000000;
             }
           }
         }
-        .userChat{
-          padding: 10px;
-          align-items: center;
-          cursor: pointer;
-          gap: 10px;
-          color:#fff;
-          &:hover{
-            background-color: #aee666;
-          }
-          img{
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-          }
+      }
+      .userChat {
+        padding: 10px;
+        align-items: center;
+        cursor: pointer;
+        gap: 10px;
+        color: #fff;
+
+        &:hover {
+          background-color: #aee666;
+        }
+        img {
+          height: 40px;
+          border-radius: 50%;
+          object-fit: cover;
         }
       }
     }
-    .chat{
-      flex:2;
+    .chat {
+      flex: 2;
     }
   }
 }
