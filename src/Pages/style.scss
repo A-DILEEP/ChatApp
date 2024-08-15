@@ -129,11 +129,11 @@
       }
       .userChat {
         padding: 10px;
+        display: flex;
         align-items: center;
         cursor: pointer;
         gap: 10px;
         color: #fff;
-
         &:hover {
           background-color: #aee666;
         }
@@ -141,6 +141,16 @@
           height: 40px;
           border-radius: 50%;
           object-fit: cover;
+        }
+        .userChatInfo{
+          span{
+            font-weight: 500;
+            font-size: 20px;
+          }
+          p{
+            font-size: 18px;
+            color:grey;
+          }
         }
       }
     }
