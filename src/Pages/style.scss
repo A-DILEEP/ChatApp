@@ -198,14 +198,32 @@
             max-width: 80%;
             display: flex;
             flex-direction: column;
+            align-items: flex-start;
             gap: 10px;
             p{
               background-color: white;
               padding: 10px 20px;
-              border-radius: 5px;
+              border-radius: 0px 10px 10px 10px;
+            }
+            img{
+              width: 50%;
+              max-width: max-content;
+              border-radius: 10px;
             }
           }
+          &.owner{
+            flex-direction: row-reverse;
+            .messageContent{
+              color:#fff;
+              align-items: flex-end;
+              
+              p{
+                background-color: #669fe6;
+                border-radius: 10px 0px 10px 10px;
 
+              }
+            }
+          }
         }
       }
       .input {
