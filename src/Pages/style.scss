@@ -177,6 +177,36 @@
         background-color: #bbb7b7;
         padding: 10px;
         height: calc(100% - 100px);
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        .message{
+          display: flex;
+          gap: 10px;
+          margin-bottom: 20px;
+          .messageInfo{
+            display: flex;
+            flex-direction: column;
+            color: grey;
+            font-weight: 300;
+            img{
+              width: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .messageContent{
+            max-width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            p{
+              background-color: white;
+              padding: 10px 20px;
+              border-radius: 5px;
+            }
+          }
+
+        }
       }
       .input {
         background-color: #fff;
