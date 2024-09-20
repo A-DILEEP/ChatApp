@@ -1,13 +1,13 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import React, { useState } from "react";
 import AddItem from "../../assets/addAvatar.png";
 import { auth, storage } from "../../firebase.js";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 const Register = () => {
   const handleSubmit = async (e) => {
-    const [err, setError] = useState(false);
     e.preventDefault();
-    const diaplyName = e.target[0].value;
+    const [err,setError] = useState(false);
+    const displayName = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
     const file = e.target[3].files[0];
@@ -19,15 +19,18 @@ const Register = () => {
 
       uploadTask.on(
         (error) => {
-          setError(true)
+          setError(true);
         },
         () => {
-          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-            console.log("File available at", downloadURL);
+          getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
+            await updateProfile(res.user, {
+              displayName,
+              photoURL: downloadURL,
+            });
           });
         }
       );
-    } catch (err) {
+    } catch (error) {
       setError(true);
     }
   };
@@ -45,8 +48,8 @@ const Register = () => {
             <span>Add an Avatar</span>
           </label>
           <button>SignUp</button>
-          {err && <span>Something Went Wrong</span>}
         </form>
+          {/* {err && <span>Something Went Wrong</span>} */}
         <p>You dont have an account ? Login</p>
       </div>
     </div>
