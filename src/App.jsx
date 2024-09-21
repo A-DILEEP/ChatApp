@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home'
 import './Pages/style.scss'
 const App = () => {
   return (
-    <Register/>
+    <Home/>
   )
 }
 

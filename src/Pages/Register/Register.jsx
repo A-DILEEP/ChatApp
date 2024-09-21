@@ -49,7 +49,6 @@ const Register = () => {
           </label>
           <button>SignUp</button>
         </form>
-          {/* {err && <span>Something Went Wrong</span>} */}
         <p>You dont have an account ? Login</p>
       </div>
     </div>

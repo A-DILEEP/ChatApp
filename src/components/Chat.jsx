@@ -10,7 +10,6 @@ const Chat = () => {
       <div className="chatInfo">
         <span>Dileep</span>
         <div className="chatIcons">
-          <img src={Cam} altsrc="Camera" />
           <img src={add} altsrc="add" />
           <img src={more} altsrc="more" />
         </div>
