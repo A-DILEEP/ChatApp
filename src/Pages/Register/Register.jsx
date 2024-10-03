@@ -4,9 +4,9 @@ import AddItem from "../../assets/addAvatar.png";
 import { auth, storage } from "../../firebase.js";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 const Register = () => {
+  const [err, setError] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const [err,setError] = useState(false);
     const displayName = e.target[0].value;
     const email = e.target[1].value;
     const password = e.target[2].value;
